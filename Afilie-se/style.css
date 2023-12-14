@@ -1,0 +1,305 @@
+@property --redPt {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #e4142c;
+}
+
+#div-afilie-se img {
+    display: flex;
+    width: 100%;
+}
+
+main .desc-duvidas-afiliado {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+main .desc-duvidas-afiliado p {
+    font-family: sans-serif;
+    padding: 2em;
+    width: calc(50% - 6em);
+    background-color: rgb(235, 235, 235);
+    margin: 2em 0px;
+}
+
+#title-afiliacao {
+    text-align: center;
+    font-size: 2em;
+}
+
+#title-afiliacao span {
+    border-bottom: .13em solid var(--redPt);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+}
+
+form div {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.label-form {
+    font-size: 1.3em;
+}
+
+.form-campo-linha {
+    margin-bottom: 2em;
+    display: flex;
+}
+
+.form-campo-linha input {
+    font-size: 1.5em;
+    border: none;
+    border-bottom: .13em solid var(--redPt);
+    outline: none;
+    padding: 0px;
+}
+
+#form-div-nomes input {
+    width: calc(100% - 7.5em);
+}
+
+form select {
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    border-bottom: .13em solid var(--redPt);
+    outline: none;
+}
+
+#form-div-genero-etnia select {
+    width: 10em;
+}
+
+.label-file {
+    white-space: nowrap;
+}
+
+.form-img-file {
+    border: .13em dashed var(--redPt);
+    margin: 1em;
+    width: calc(100% - 2em - .26em);
+    background-image: url("../images/filie-se-ao-pt.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-campo-linha input[type="file"] {
+    cursor: pointer;
+    opacity: 0;
+    width: 100%;
+    height: 15em;
+}
+
+.text-invisivel {
+    /* position: absolute; */
+    height: 0px;
+    width: 0px;
+    padding: 0px;
+    /* left: -4px; */
+}
+
+.form-campo-linha input[type="date"] {
+    font-size: 1.5em;
+    border-bottom: .155em solid var(--redPt);
+    padding: 2px 0px;
+    text-align: center;
+}
+
+#form-div-endereco select {
+    min-width: 8em;
+    font-size: 1.5em;
+}
+
+#form-div-endereco label {
+    margin-left: 1em;
+}
+
+#form-endereco-num {
+    width: 4em;
+}
+
+form button {
+    background-color: var(--redPt);
+    border: none;
+    color: white;
+    padding: 1em;
+    cursor: pointer;
+    font-size: 1.3em;
+    border-radius: 2em;
+}
+
+.loader {
+    border: 1em solid white;
+    border-top: 1em solid var(--redPt);
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    position: fixed;
+    top: calc(50% - 3em);
+    left: calc(50% - 3em);
+    /* Safari */
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 1s linear infinite;
+    z-index: 1001;
+}
+
+.grayBackground {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 50%;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+}
+
+#loader-background {
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#message-afilicao {
+    display: none;
+}
+
+#message-afilicao .message {
+    background-color: rgba(255, 255, 255, .9);
+    color: var(--redPt);
+    min-width: 50vw;
+    position: fixed;
+    padding: 1em;
+    text-align: center;
+    top: calc(40%);
+    left: calc(50% - 50vh/2);
+    z-index: 1001;
+}
+
+#message-afilicao .message button {
+    border: .25em solid var(--redPt);
+    font-size: 1em;
+    border-radius: 5em;
+    background-color: var(--redPt);
+    color: white;
+    outline: none;
+}
+
+.divSorteio {
+    text-align: center;
+    background: linear-gradient(var(--redPt) 90%, white 100%);
+    margin-bottom: 2em;
+    color: white;
+    border-radius: 1.3em 1.3em 0em 0em;
+    padding-bottom: 3em;
+}
+
+#divSorteio h2 {
+    font-size: 4em;
+}
+
+#divSorteio span {
+    font-size: 3em;
+}
+
+#input-info {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    #formulario {
+        padding: 0px;
+    }
+
+    #form-div-dados input[type="date"],
+    #form-div-dados input[type="text"] {
+        width: calc(100% - 2em);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #form-div-nomes input {
+        width: calc(100% - 2em);
+        text-align: center;
+    }
+
+    #form-div-genero-etnia select {
+        width: calc(100% - 2em);
+    }
+
+    #form-div-endereco input,
+    #form-div-endereco select {
+        width: calc(50% - 105px);
+    }
+
+    #form-div-endereco input:last-child {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .form-campo-linha input[type="text"],
+    .form-campo-linha input[type="date"] {
+        width: calc(100% - 2em);
+        text-align: center;
+        margin-bottom: 1.3em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        margin: 0px;
+        max-width: 100vw;
+    }
+
+    .desc-duvidas-afiliado {
+        flex-direction: column;
+        margin: .5em .5em;
+    }
+
+    main .desc-duvidas-afiliado p {
+        padding: 1.5em;
+        width: calc(100% - 3em);
+        margin: .5em 0em;
+    }
+
+    form h2 {
+        text-align: center;
+        margin: 1.5em;
+    }
+
+    .form-campo-linha {
+        display: block;
+    }
+
+    #form-div-endereco input,
+    .form-campo-linha input[type="text"],
+    .form-campo-linha input[type="date"] {
+        width: calc(100% - 2em);
+    }
+
+    .form-img-file {
+        margin-bottom: 2em;
+    }
+
+    #form-div-endereco select,
+    .form-campo-linha select {
+        width: calc(100% - 2em);
+        margin-bottom: 2em;
+    }
+}

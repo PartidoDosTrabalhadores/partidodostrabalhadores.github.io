@@ -1,0 +1,422 @@
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+@property --redPt {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #e4142c;
+}
+
+
+body {
+    margin: 0px;
+    font-family: Roboto, "Roboto", sans-serif;
+    user-select: none;
+}
+
+header {
+    background-color: var(--redPt);
+    padding: 1.3em 2.2em;
+    justify-content: space-between;
+    display: flex;
+}
+
+header div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.icon-menu {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.3em;
+    height: 1.3em;
+}
+
+header div a {
+    border-radius: 1em;
+    border: 0.1em solid white;
+    color: white;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.65em;
+    padding: .4em;
+}
+
+header .a-logo-PT {
+    display: flex;
+    align-items: center;
+}
+
+#logo-PT {
+    width: 10em;
+}
+
+#title-PT {
+    height: 2.5em;
+}
+
+#headerApoieAfiliese button {
+    vertical-align: middle;
+    flex-direction: column;
+    width: 7em;
+}
+
+#headerApoieAfiliese button:first-child {
+    margin-bottom: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes-social {
+    display: flex;
+    flex-direction: row;
+    padding: .5em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon-social {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: var(--redPt);
+    border-radius: 1.3em;
+    padding: .5em;
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: .3em;
+}
+
+.facebook {
+    background-image: url("images/social/facebook.png");
+}
+
+.instagram {
+    background-image: url("images/social/instagram.png");
+}
+
+.twitter {
+    background-image: url("images/social/twitter.png");
+}
+
+.youtube {
+    background-image: url("images/social/youtube.png");
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 90vw;
+}
+
+#banner {
+    /* margin-top: 2em; */
+    display: flex;
+    background-color: var(--redPt);
+    /* text-align: center;
+    align-items: center; */
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+#banner img {
+    display: flex;
+    width: auto;
+    margin: auto;
+}
+
+
+.card {
+    margin: 2em 0em 0em 0em;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+#cardLine1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news {
+    border-radius: 1em;
+    display: flex;
+    width: calc(60vw - 2em);
+    height: 35vw;
+    background-image: url("images/Lula mao levantada.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+
+.news .black-figure {
+    position: absolute;
+    width: calc(60vw - 2em);
+    height: 35vw;
+    border-radius: 1em;
+    background-color: black;
+    opacity: 33%;
+}
+
+.news span {
+    color: white;
+    margin-top: auto;
+    text-shadow: 1px 1px 2px var(--redPt), 0 0 .5em var(--redPt), 0 0 0.2em var(--redPt);
+    padding: 1em;
+    width: calc(100% - 2em);
+    z-index: 1;
+}
+
+.sorteio {
+    border-radius: 1em;
+    display: flex;
+    width: 30vw;
+    height: 35vw;
+    background-position: center;
+    background-image: url("images/sorteio.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+.sorteio span {
+    color: white;
+    margin-top: auto;
+    padding: 1em;
+    width: calc(100% - 2em);
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 0 0 .75em .75em;
+    font-size: 1.5em;
+}
+
+#cardLine2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagem {
+    display: flex;
+    height: 30vw;
+    width: calc(45vw - 1em);
+}
+
+.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+.doacao {
+    display: flex;
+    height: 30vw;
+    width: calc(45vw - 1em);
+    background-image: url("images/Lula amem.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    flex-direction: column;
+}
+
+.doacao .black-figure {
+    position: absolute;
+    width: calc(45vw - 1em);
+    height: 30vw;
+    border-radius: 1em;
+    background-color: black;
+    opacity: 20%;
+}
+
+.doacao h2 {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px var(--redPt), 0 0 .5em var(--redPt), 0 0 0.2em var(--redPt);
+    padding: 1em;
+    width: calc(100% - 2em);
+    z-index: 1;
+}
+
+.doacao span {
+    color: white;
+    margin-top: auto;
+    padding: 1em;
+    width: calc(100% - 2em);
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 0 0 .75em .75em;
+    font-size: 1.5em;
+    z-index: 2;
+}
+
+#charges {
+    margin-top: 2em;
+    background-color: var(--redPt);
+    padding: 2em;
+    width: calc(100% - 4em);
+    display: inline-flex;
+    overflow-x: auto;
+}
+
+#charges::-webkit-scrollbar {
+    height: 1em;
+}
+
+#charges::-webkit-scrollbar-track {
+    background: white;
+}
+
+#charges::-webkit-scrollbar-thumb {
+    background-color: var(--redPt);
+    border-radius: 0.4em;
+    border: 0.15em solid white;
+}
+
+.chargeCard {
+    display: block;
+    height: 30em;
+    padding: .5em;
+    border-radius: 1.5em;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    padding: 2em 5em;
+    background-color: rgb(37, 37, 37);
+    justify-content: space-between;
+}
+
+footer img {
+    width: 10em;
+    height: 10em;
+    vertical-align: middle;
+}
+
+.div-space-around {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .div-space-around a {
+    align-items: center;
+    display: flex;
+    border-style: none;
+    border-bottom: 0.1em solid white;
+    color: white;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.65em;
+    padding: .4em;
+}
+
+.nossas-redes-sociais {
+    font-size: 1.5em;
+}
+
+.nossas-redes-sociais,
+#div-redes-sociais span {
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #div-redes-sociais {
+        margin-top: 1.5em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .chargeCard {
+        height: 20em;
+        padding: .5em;
+        border-radius: 1.5em;
+    }
+
+    .doacao span {
+        display: none;
+    }
+
+    .doacao h2 {
+        margin-top: auto;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    #cardLine1 {
+        flex-direction: column;
+    }
+
+    .news {
+        width: calc(95vw - 2em);
+        height: 50vw;
+    }
+
+    .news .black-figure {
+        position: absolute;
+        width: calc(95vw - 2em);
+        height: 50vw;
+    }
+
+    .sorteio {
+        width: calc(95vw - 2em);
+        height: 50vw;
+    }
+
+    .imagem {
+        display: none;
+    }
+
+    .doacao {
+        width: calc(95vw - 2em);
+        height: 50vw;
+    }
+
+    .doacao span {
+        display: block;
+    }
+
+    .doacao h2 {
+        margin-top: 0px;
+        margin-bottom: auto;
+    }
+
+    .doacao .black-figure {
+        width: calc(95vw - 2em);
+        height: 50vw;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .a-logo-PT {
+        flex-direction: column;
+    }
+
+    header div:first-child {
+        display: none;
+    }
+}

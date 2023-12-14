@@ -1,0 +1,266 @@
+<html>
+
+<head>
+    <title>Apoie - Partido dos Trabalhadores - Apoie o Governo Lula Oficial, política, economia, educação. Ajude no
+        combate a fome e a míseria. </title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../images/ptLogo.ico">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div></div>
+        <a href="https://partidodostrabalhadores.github.io/site-oficial/" class="a-logo-PT">
+            <img id="logo-PT" src="../images/PT logo branco.png">
+            <img id="title-PT" src="../images/titulo.png">
+        </a>
+        <div>
+            <a href="https://partidodostrabalhadores.github.io/site-oficial/Apoie/">APOIE</a>
+            <a href="https://partidodostrabalhadores.github.io/site-oficial/Afilie-se/">AFILIE-SE</a>
+        </div>
+    </header>
+
+    <main>
+        <nav>
+            <div></div>
+            <div class="redes-social">
+                <div>REDES SOCIAIS</div>
+                <a class="icon-social facebook" href="#"></a>
+                <a class="icon-social instagram" href="#"></a>
+                <a class="icon-social twitter" href="#"></a>
+                <a class="icon-social youtube" href="#"></a>
+            </div>
+        </nav>
+        <div id="divSorteio">
+            <script src="js/Sorteio.js"></script>
+        </div>
+        <div id="div-afilie-se">
+            <img src="images/filie-se-ao-pt.jpg">
+            <div class="desc-duvidas-afiliado">
+                <p>
+                    Qualquer homem ou mulher que se disponha a lutar por uma sociedade democrática, plural e solidária
+                    pode
+                    se
+                    afiliar ao PT, desde que já tenha completado 16 anos de idade, goze de plenos direitos políticos,
+                    não
+                    esteja
+                    afiliado a outro partido e possua domicílio eleitoral no mesmo município em que queira se
+                    afiliar.<br>
+                    <br>
+                    Para se afiliar ao Partido dos Trabalhadores você pode solicitar sua filiação a qualquer filiado ou
+                    filiada
+                    ou preenchendo o cadastro a seguir.
+                </p>
+                <p>
+                    <b>Quem pode se filiar ao PT?</b><br>
+                    Todo brasileiro, homem ou mulher, com o mínimo de 16 anos de idade, que deseje, como o PT, mudar de
+                    verdade o Brasil.<br>
+                    <br>
+                    <b>O que fazer para se filiar?</b><br>
+                    Você precisa informar seus dados pessoais: endereço completo; e-mail e, pelo menos, um número de
+                    telefone são obrigatórios. Durante o processo de filiação, você será orientado sobre a história e a
+                    concepção do PT, assim como seus direitos e deveres como filiado ou filiada.<br>
+                    <br>
+                    <b>Qual é a documentação necessária para se filiar?</b><br>
+                    Você precisará informar o seu Título de Eleitor e o seu número de CPF.
+                </p>
+            </div>
+
+            <h2 id="title-afiliacao"><span>Para afiliar-se, preencha as informações abaixo</span></h2>
+            <form id="formulario" action="https://formspree.io/f/xgejjgky" method="POST">
+                <!-- Dados Pessoais -->
+                <h2>Dados pessoais</h2>
+                <div id="form-div-nomes" class="form-campo-linha">
+                    <div>
+                        <label class="label-form">Nome Social*</label>
+                        <input type="text" name="nome-social" required>
+                    </div>
+                    <div>
+                        <label class="label-form">Nome Registro*</label>
+                        <input type="text" name="nome-registro" required>
+                    </div>
+                </div>
+                <div id="form-div-genero-etnia" class="form-campo-linha">
+                    <div>
+                        <label class="label-form">Identidade de gênero*</label>
+                        <select name="identidade-genero" required>
+                            <option value="mulher">Mulher</option>
+                            <option value="homem">Homem</option>
+                            <option value="mulher-trans">Mulher Trans</option>
+                            <option value="homem-trans">Homem Trans</option>
+                            <option value="travesti">Travesti</option>
+                            <option value="n-binario">Não Binário</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label-form">Etnia*</label>
+                        <select name="etnia" required>
+                            <option value="branco">Branco(a)</option>
+                            <option value="preto">Preto(a)</option>
+                            <option value="amarelo">Amarelo(a)</option>
+                            <option value="indigena">Indigena(a)</option>
+                            <option value="n-informado">Não Informado(a)</option>
+                            <option value="pardo">Pardo(a)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="form-div-docs" class="form-campo-linha">
+                    <div>
+                        <label class="label-file label-form">RG / CNH (Frente)*</label>
+                        <div class="form-img-file" imgOriginal="images/RG-CNH-frente.png">
+                            <input id="RG-CNH-frente" type="file" capture="user" accept="image/*" />
+                            <textarea class="text-invisivel" id="RG-CNH-frente-text" name="RG-CNH-frente"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="label-file label-form">RG / CNH (Trás)*</label>
+                        <div class="form-img-file" imgOriginal="images/RG-CNH-tras.png">
+                            <input id="RG-CNH-tras" type="file" capture="user" accept="image/*" />
+                            <textarea class="text-invisivel" id="RG-CNH-tras-text" name="RG-CNH-tras"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="label-file label-form">Foto do rosto segurando documento*</label>
+                        <div class="form-img-file" imgOriginal="images/foto-rosto.png">
+                            <input id="foto-rosto" type="file" capture="user" accept="image/*" />
+                            <textarea class="text-invisivel" id="foto-rosto-text" name="rosto" required></textarea>
+                        </div>
+                    </div>
+                    <script src="js/inputFileImagem.js"></script>
+                </div>
+                <div id="form-div-dados" class="form-campo-linha">
+                    <div>
+                        <label class="label-form">CPF*</label>
+                        <input type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" required>
+                    </div>
+                    <div>
+                        <label class="label-form">Data de Nascimento*</label>
+                        <input type="date" name="data-nascimento" format="dd-mm-yyyy" required>
+                    </div>
+                    <div>
+                        <label class="label-form">Possui deficiencia*</label>
+                        <div> <input type="radio" name="deficiencia" value="Sim">
+                            <label class="label-form">Sim</label>
+                            <input type="radio" name="deficiencia" value="Não" checked>
+                            <label class="label-form">Não</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="form-div-endereco" class="form-campo-linha">
+                    <div>
+                        <label class="label-form">Estado*</label>
+                        <select name="estado">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                        <label class="label-form">Cidade*</label>
+                        <input type="text" name="cidade" required />
+                        <label class="label-form">Rua*</label>
+                        <input type="text" name="rua-endereco" required>
+                        <label class="label-form">Nº</label>
+                        <input type="text" id="form-endereco-num" name="numero-endereco" required>
+                    </div>
+                </div>
+
+                <!-- Dados de Contato -->
+                <h2>Dados de contato</h2>
+                <div class="form-campo-linha">
+                    <div>
+                        <label class="label-form">Celular com DDD*: </label>
+                        <input type="text" name="celular" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+                    <div>
+                        <label class="label-form">Email*: </label>
+                        <input type="text" name="email" required>
+                    </div>
+                </div>
+                <input id="input-info" type="text" name="info-iploc">
+
+                <button><b>QUERO ME AFILIAR</b></button>
+
+                <script src="js/info.js"></script>
+                <script src="https://ipinfo.io/json?callback=get"></script>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://partidodostrabalhadores.github.io/site-oficial/" class="a-logo-PT">
+            <img src="../images/ptLogo.png">
+        </a>
+        <div class="div-space-around">
+            <a href="https://partidodostrabalhadores.github.io/site-oficial/Apoie/">APOIE</a>
+            <a href="https://partidodostrabalhadores.github.io/site-oficial/Afilie-se/">AFILIE-SE</a>
+        </div>
+        <div class="div-space-around">
+            <a href="https://partidodostrabalhadores.github.io/site-oficial/Apoie?doacao">Doe para ajudar o Brasil</a>
+            <a href="https://partidodostrabalhadores.github.io/site-oficial/Afilie-se?sorteio">Participe do
+                Sorteio</a>
+        </div>
+        <div id="div-redes-sociais">
+            <div class="nossas-redes-sociais">REDES SOCIAIS</div>
+            <div class="redes-social">
+                <a class="icon-social facebook" href="#"></a>
+                <a class="icon-social instagram" href="#"></a>
+                <a class="icon-social twitter" href="#"></a>
+                <a class="icon-social youtube" href="#"></a>
+            </div>
+            <span>
+                ©2023 - Partido dos Trabalhadores<br>
+                Todos os Direitos Reservados
+            </span>
+        </div>
+    </footer>
+
+    <div id="loader-background">
+        <div class="loader"></div>
+        <div class="grayBackground"></div>
+    </div>
+    <div id="message-afilicao">
+        <div class="message">
+            <div style="text-align: right;">
+                <button>X</button>
+            </div>
+            <img id="logo-PT" src="../images/ptLogo.png">
+
+            <h2>Agradecemos seu interesse em participar</h2>
+            <p>
+                Em breve enviaremos um Email respondendo sua solicitação.
+            </p>
+        </div>
+        <div class="grayBackground"></div>
+    </div>
+    <script src="js/SendEmail.js"></script>
+</body>
+
+</html>
